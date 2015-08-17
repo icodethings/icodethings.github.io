@@ -24,6 +24,12 @@ h1 {
   font-size:28px;
 }
 
+section h1{
+	padding-bottom: 5px;
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 8px;
+}
+
 h2 {
   color:#393939;
 }
