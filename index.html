@@ -1,60 +1,37 @@
-<!doctype html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="chrome=1">
-	<title>Matthew Vandenbossche</title>
+---
+layout: default
+title: Home
+---
 
-	<link rel="stylesheet" href="stylesheets/styles.css">
-	<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
-	<!--<link rel="stylesheet" href="stylesheets/pygment_trac.css">-->
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<!--[if lt IE 9]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-</head>
-<body>
-<div class="wrapper">
-	<header>
-		<h1>Matthew Vandenbossche</h1>
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
 
-		<p>
-			<i class="fa fa-fw fa-briefcase"></i> Software &amp; Systems Engineer <br />
-			<i class="fa fa-fw fa-map-marker"></i> Melbourne Australia
-		</p>
+    <span class="post-date">{{ post.date | date_to_string }}</span>
 
-		<p class="view">
-			<a href="https://github.com/icodethings">
-				<i class="fa fa-fw fa-github"></i>
-				Github
-			</a><br />
-			<a href="https://twitter.com/matt_v">
-				<i class="fa fa-fw fa-twitter"></i>
-				Twitter
-			</a><br />
-			<a href="mailto:matt@icodethin.gs">
-				<i class="fa fa-fw fa-envelope"></i>
-				Email
-			</a>
-		</p>
-	</header>
-	<section>
-		<h1>Products</h1>
-		<h2>MailLab <strong>(Coming Soon)</strong></h2>
-		<p>
-			Maillab is a super easy to use REST API to generate responsive, standard, beautiful emails.<br />
-			Instead of dealing with all the headaches that is required to create good looking, responsive, tested emails
-			you can make a simple API call and we'll deal with all of that.
-		</p>
-	</section>
-	<!--<footer>
-		<p>
-			<small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a>
-			</small>
-		</p>
-	</footer>-->
+    {{ post.content }}
+  </div>
+  {% endfor %}
 </div>
-<script src="javascripts/scale.fix.js"></script>
 
-</body>
-</html>
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
