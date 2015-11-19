@@ -14,3 +14,4 @@ markdown: kramdown
 paginate: 5
 permalink: pretty
 relative_permalinks: true
+excerpt_separator: <!--more-->
