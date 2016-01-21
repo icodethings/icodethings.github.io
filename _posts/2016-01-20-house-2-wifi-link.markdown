@@ -47,7 +47,7 @@ subtle. So I extended the existing TV antenna pole up a couple of meters and pla
 After a bit of difficult aligning, messing with channels, chanel widths and power output, I'm super happy with the
 results. The latency is basically nothing (sub 1ms) and the reported throughput capacity averages over 450Mbps.
 
-![Screenshot of graph showing average through capacity](/public/images/house/mine-mount.jpg)
+![Screenshot of graph showing average through capacity](/public/images/house/ubnt-throughput.jpg)
 
 I'm able to use the full 100Mbps HFC connection at my parents house without any hint it's traveling over a PTP
 wireless link. After a bit of tweaking and aligning we haven't had any issues with this for the few months we've been
