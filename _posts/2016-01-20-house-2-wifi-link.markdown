@@ -12,8 +12,8 @@ don't mind at all. It also gives me the ability to get faster internet.
 
 In Australia the average internet connection is ADSL2+, according to a quick google, the average speed being around
 10Mbps. While that's not that bad, some areas have the ability to get [HFC](https://en.wikipedia.org/wiki/Hybrid_fibre-coaxial)
-at about 100Mbps. Something my parents house has and my house is in a small black spot. While I could get an ADSL2+
-connection, I thought it would be a good chance to play with PTP wireless network links.
+at about 100Mbps. Something my parents house has and my house doesn't. While I could get an ADSL2+ connection, I thought
+it would be a good chance to play with PTP wireless network links.
 
 <!--more-->
 
@@ -32,27 +32,30 @@ second subnet for my house with a local router but right now the link is stable 
 
 ### Mounting
 
-For my parents house, I purchased Ubiquiti's standard mounting pole to be attached to their chimney on the second level.
-The goal was to make it as subtle as possible.
+For my parents house, I purchased Ubiquiti's standard mounting pole that is attached to their chimney on the second
+level. The goal was to make it as subtle as possible.
 
 ![Ubiquiti NanoBeam AC mounted on chimney](/public/images/house/parents-mount.jpg)
 
 With mounting for my house, I was able to mount it as high as possible without having to worry about making it as
-subtle. So I extended the existing TV antenna pole up a few meters and placed it at the top.
+subtle. So I extended the existing TV antenna pole up a couple of meters and placed it at the top.
 
 ![Ubiquiti NanoBeam AC mounted on antenna pole](/public/images/house/mine-mount.jpg)
 
 ### Results
 
 After a bit of difficult aligning, messing with channels, chanel widths and power output, I'm super happy with the
-results. The latency is basically nothing and the reported throughput capacity averages over 450Mbps.
+results. The latency is basically nothing (sub 1ms) and the reported throughput capacity averages over 450Mbps.
 
-I'm able to use the full 100Mbps cable connection at my parents house without any hint it's traveling over a PTP
-wireless link. We haven't had any issues with this for the few months we've been relying on it that makes us want a
-backup connection. So overall I'm very happy with the results.
+![Screenshot of graph showing average through capacity](/public/images/house/mine-mount.jpg)
 
-Right now the bottlneck in at my house is the 100Mbit switch and the 2.5GHz 802.11n wifi router, I'm not able to
-actually utilize the full available throughput of the wireless link.
+I'm able to use the full 100Mbps HFC connection at my parents house without any hint it's traveling over a PTP
+wireless link. After a bit of tweaking and aligning we haven't had any issues with this for the few months we've been
+relying on it. Overall I'm very happy with the results. I don't expect to need any sort of backup connection in the near
+future.
+
+Right now the only bottleneck is the 100Mbit switch and the 2.5GHz 802.11n wifi router at my house. Because of this I'm
+not able to actually utilize the full available throughput of the wireless link.
 
 ### What's Next
 
