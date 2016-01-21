@@ -1,0 +1,28 @@
+// Tag page
+
+header.tag-page-header{
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.posts.tag-page{
+  padding-bottom: 1rem;
+
+  .post{
+	margin-top: 0.5rem;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: none;
+
+	.post-title{
+	  margin: 0;
+	}
+
+	.post-date{
+	  margin-top: 0;
+	  margin-bottom: 0;
+	  float: right;
+	}
+  }
+}

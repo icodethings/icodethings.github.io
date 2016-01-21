@@ -1,0 +1,31 @@
+---
+layout: default
+title: Home
+---
+
+<header class="tag-page-header">
+	<h1 class="page-title">
+		Tag: {{ page.tag }}
+	</h1>
+</header>
+
+<div class="posts tag-page">
+	{% for post in site.tags[page.tag] %}
+	{% capture currentyear %}{{ post.date | date: "%Y" }}{% endcapture %}
+	{% if currentyear != year %}
+		<header class="year">
+			<h2>{{ currentyear }}</h2>
+		</header>
+		{% capture year %}{{ currentyear }}{% endcapture %}
+	{% endif %}
+	<nav class="post">
+		<time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+
+		<h3 class="post-title">
+			<a href="{{ site.baseurl }}{{ post.url }}">
+				{{ post.title }}
+			</a>
+		</h3>
+	</nav>
+	{% endfor %}
+</div>

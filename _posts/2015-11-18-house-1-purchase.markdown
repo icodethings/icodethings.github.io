@@ -3,15 +3,16 @@ layout: post
 title:  "House #1: Purchase"
 date:   2015-11-18 17:00
 categories: house
+tags: ['house']
+series: 'house'
 ---
-This is the first post in the adventures of my first house.
+This is the first post in a series around the adventures of my first house.
 
 On a Friday evening at the start of August 2015 we inspected a 2 bedroom unit in [Murrumbeena](https://www.google.com.au/maps/place/Murrumbeena+VIC+3163/).
-The same suburb I've lived in my entire life. My partner and I had been looking and bid (and lost) at a few auctions for
-a few months for our first home. We loved the unit, it was the perfect location, perfect size, it had huge north facing
-windows and just what we were after. Required a bit of work, but we were up for the challenge. The next day we put in an 
-offer and that night the offer was accepted. They didn't even get to taking photos of the unit before we had our offer 
-accepted. Easiest sale ever! 
+The same suburb I've lived in my entire life. My partner and I had been looking for a few months for our first home. We
+loved the unit, it was the perfect location, perfect size, it had huge north facing windows and just what we were after.
+Required a bit of work, but we were up for the challenge. The next day we put in an offer and that night the offer was
+accepted. They didn't even get to taking photos of the unit before we had our offer accepted. Easiest sale ever!
 
 <!--more-->
 

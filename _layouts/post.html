@@ -2,24 +2,51 @@
 layout: default
 ---
 
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
-</div>
+<article class="post post-full">
+	<header class="post-header">
+		<h1 class="post-title">{{ page.title }}</h1>
+		<nav class="post-tags">
+			<span>Tags: </span>
+			<ul>
+				{% for tag in page.tags %}
+				<li>
+					<a href="/tags/{{ tag }}/">{{ tag }}</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</nav>
+		<time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
+	</header>
 
-<div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+	{% if page.series %}
+		<aside class="message">
+			This is a post in the adventures of my first house. To view all the posts click <a href="/tags/{{ page.series }}/">here</a>.
+		</aside>
+
+		<hr />
+	{% endif %}
+
+	{{ content }}
+</article>
+
+{% if site.related_posts != empty %}
+<aside class="related">
+	<h2>Related Posts</h2>
+	<nav>
+		<ul class="related-posts">
+			{% for post in site.related_posts limit:3 %}
+			<li>
+				<h3>
+					<a href="{{ site.baseurl }}{{ post.url }}">
+						{{ post.title }}
+						<small>
+							<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+						</small>
+					</a>
+				</h3>
+			</li>
+			{% endfor %}
+		</ul>
+	</nav>
+</aside>
+{% endif %}
