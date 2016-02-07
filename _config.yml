@@ -1,7 +1,7 @@
 # Site settings
 title: I Code Things
 email: matt@icodethin.gs
-tagline: Personal Website of Matthew Vandenbossche
+tagline: Matthew Vandenbossche
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://icodethin.gs" # the base hostname & protocol for your site
 twitter_username: matt_v
