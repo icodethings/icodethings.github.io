@@ -23,8 +23,7 @@ permalink: pretty
 excerpt_separator: <!--more-->
 
 gems:
-  - jekyll-mentions
-  - jemoji
+  - jekyll-paginate
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-feed
