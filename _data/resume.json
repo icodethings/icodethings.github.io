@@ -30,7 +30,7 @@
 			"summary": "Started off as a PHP developer, but quickly transitioned into both a Software and Systems Engineer. I designed and managed the custom fully scalable SaaS hosting infrastructure built on top of AWS while growing the ShopFrontPro platform.",
 			"highlights": [
 				"Built and managed a custom fully scalable SaaS hosting infrastructure in AWS",
-				"Build and managed the AWS hosting infrastructure for Harvey Norman Group",
+				"Built and managed the AWS hosting infrastructure for Harvey Norman Group",
 				"Designed and build a live WYSIWYG website editor",
 				"Integrated with many 3rd party services",
 				"Optimised existing PHP codebase for scale and 5x performance boost"
@@ -75,7 +75,7 @@
 				"NGINX",
 				"PHP-FPM",
 				"MySQL",
-				"RethinDB"
+				"RethinkDB"
 			]
 		}
 	],

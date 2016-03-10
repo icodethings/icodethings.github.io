@@ -16,7 +16,7 @@
   padding-right: 1rem;
 
   > a {
-	background: linear-gradient(to bottom, rgba(0,0,0,0.02) 0%, rgba(0,0,0,0) 20%);
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0) 20%);
 
 	font-weight: bold;
 	display: block;
@@ -75,7 +75,13 @@
 
 // Indenting for lists
 .resume .indent {
-  margin-left: 1rem;
+  margin-left: 0.25rem;
+}
+
+@media print, (min-width: $breakpoint-mobile) {
+  .resume .indent {
+	margin-left: 1rem;
+  }
 }
 
 // Justify the text blocks
@@ -101,7 +107,8 @@
 	}
 
 	a {
-	  border: 1px solid #eee;
+	  box-shadow: 0 2px 2px rgba(38, 139, 210, 0.04);
+	  border: 1px solid #268bd2;
 	  margin-bottom: 1rem;
 	  border-radius: 0.25rem;
 	  text-align: center;
@@ -130,6 +137,7 @@
 	  //flex: 1;
 
 	  a {
+		box-shadow: none;
 		border: none;
 		margin-bottom: 0;
 		padding: 0.25rem 0.5rem;
@@ -187,13 +195,18 @@
 }
 
 // === Head contact block ===
+
+.resume .contact-head{
+  padding-bottom: 0;
+}
+
 @media screen and (min-width: $breakpoint-mobile) {
   .resume .contact-head {
 	margin-top: -5.5rem;
 	padding-bottom: 2rem;
 	padding-left: 8rem;
 
-	ul.contact li a{
+	ul.contact li a {
 	  padding: 0.25rem 1.5rem 0.25rem 0;
 	}
   }
@@ -236,6 +249,7 @@
 
 	  border-radius: 0.25rem;
 	  border: 1px #eee solid;
+	  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.02);
 
 	  display: inline;
 	}
@@ -247,6 +261,7 @@
   blockquote {
 	color: #515151;
 	padding-right: 0;
+	padding-left: 1rem;
 
 	footer {
 	  color: #7a7a7a;
@@ -309,20 +324,20 @@
 	order: 4;
   }
 
+  > .skills {
+	order: 5;
+  }
+
   > .references {
 	order: 6;
   }
 
-  > .skills {
+  > .educations {
 	order: 7;
   }
 
-  > .educations {
-	order: 8;
-  }
-
   > .contact-foot {
-	order: 9;
+	order: 8;
   }
 }
 
