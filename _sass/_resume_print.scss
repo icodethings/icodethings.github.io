@@ -1,0 +1,147 @@
+/*
+	PRINT STYLESHEET FOR RESUME
+*/
+
+@page {
+  size: A4;
+  margin: 1cm 1mm;
+}
+
+.resume-page {
+  width: 1000px;
+
+  *{
+	color: black;
+  }
+
+  a[href^="http://"]:after {
+	content: " (" attr(href) ")";
+	font-size: 90%;
+  }
+
+  .container {
+	max-width: none;
+	padding: 0;
+  }
+
+  .print-warning {
+	margin-bottom: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+
+	-webkit-print-color-adjust: exact;
+	print-color-adjust: exact;
+
+	text-align: center;
+	font-weight: bold;
+	border-bottom: 1px solid #9b9b9b;
+	border-top: 1px solid #9b9b9b;
+	background-color: #e4e4e4;
+
+	display: block;
+  }
+
+  .print-button, .masthead, .page-footer {
+	display: none;
+	visibility: hidden;
+  }
+
+  .resume {
+	display: block;
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 0;
+  }
+
+  .resume > .section {
+	padding-left: 4rem;
+	padding-right: 4rem;
+  }
+
+  .resume > .header {
+	margin-bottom: 0;
+	padding-bottom: 0;
+  }
+
+  .resume ul.contact {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 0.25rem;
+	justify-content: space-between;
+
+	li {
+	  flex: 1 0 50%;
+
+	  a {
+		text-align: left;
+		padding-left: 0;
+		padding-right: 0;
+
+		span {
+		  display: inline;
+		}
+
+		span:first-of-type:after {
+		  content: ":";
+		}
+	  }
+	}
+  }
+
+  .resume > .contact-head > ul.contact {
+	padding-left: 1rem;
+  }
+
+  .resume > .skills {
+	border-bottom: none;
+
+	> div {
+	  margin-left: 0;
+	  display: flex;
+
+	  .skill-group {
+		width: 50%;
+		margin-left: 0;
+
+		&:nth-child(odd){
+		  margin-right: -1rem;
+		}
+
+		&:nth-child(even){
+		  padding-left: 1rem;
+		  border-left: 1pt #e1e1e1 dashed;
+		}
+	  }
+	}
+  }
+
+  .resume > .header-page-2{
+	page-break-before: always;
+	border-bottom: 1px #9b9b9b solid;
+  }
+
+  .resume > .works > .work > h3, .resume > .educations > .education > h3{
+	border-bottom: 1pt #e1e1e1 dashed;
+  }
+
+  .resume > .references {
+	blockquote{
+	  padding-left: 1rem;
+	  color: black;
+	  border-left-color: #9b9b9b;
+
+	  footer{
+		color: #9b9b9b;
+	  }
+	}
+  }
+
+  .resume > .contact-foot > ul{
+
+  }
+
+  .section {
+	page-break-inside: avoid;
+	border-bottom-color: #9b9b9b;
+  }
+}

@@ -8,7 +8,7 @@
   margin-right: auto;
 }
 
-@media (min-width: $breakpoint-mobile) {
+@media print, (screen and min-width: $breakpoint-mobile) {
   .container {
 	padding-left:  1.5rem;
 	padding-right: 1.5rem;
@@ -21,7 +21,7 @@
   padding-right: 1.5rem;
 }
 
-@media (min-width: $breakpoint-mobile) {
+@media print, (min-width: $breakpoint-mobile) {
   .page-footer{
 	padding: 0;
   }

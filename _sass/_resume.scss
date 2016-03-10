@@ -1,0 +1,339 @@
+// Print warning
+.print-warning {
+  display: none;
+}
+
+// Print Button
+.print-button {
+
+  display: none;
+
+  text-align: center;
+
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  > a {
+	background: linear-gradient(to bottom, rgba(0,0,0,0.02) 0%, rgba(0,0,0,0) 20%);
+
+	font-weight: bold;
+	display: block;
+	cursor: pointer;
+	padding: 0.25rem 0.35rem;
+	border-bottom-left-radius: 0.25rem;
+	border-bottom-right-radius: 0.25rem;
+	border: 1px solid #eee;
+	border-top: none;
+  }
+}
+
+@media screen and (min-width: $breakpoint-mobile) {
+  .js-printable .print-button {
+	display: block;
+  }
+}
+
+// Whole resume page
+.resume {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// Removing margin-bottom on lists
+.resume ul {
+  margin-bottom: 0;
+}
+
+// Each section
+.resume > .section {
+  flex: 1;
+
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  &:last-of-type {
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 0;
+  }
+}
+
+@media print, (min-width: $breakpoint-mobile) {
+  .resume > .section {
+	padding-left: 0;
+	padding-right: 0;
+  }
+}
+
+// Indenting for lists
+.resume .indent {
+  margin-left: 1rem;
+}
+
+// Justify the text blocks
+.resume p, .resume blockquote {
+  text-align: justify;
+}
+
+// Contact
+.resume .contact {
+  display: block;
+  padding: 0;
+  margin: 0;
+
+  li {
+	display: block;
+
+	&.print {
+	  display: none;
+	}
+
+	.js-printable &.print {
+	  display: block;
+	}
+
+	a {
+	  border: 1px solid #eee;
+	  margin-bottom: 1rem;
+	  border-radius: 0.25rem;
+	  text-align: center;
+	  display: block;
+	  height: 100%;
+	  padding-top: 1rem;
+	  padding-bottom: 1rem;
+
+	  span:first-of-type {
+		font-weight: bold;
+	  }
+
+	  span:last-of-type {
+		display: none;
+	  }
+	}
+  }
+}
+
+@media print, (min-width: $breakpoint-mobile) {
+  .resume .contact {
+	display: flex;
+
+	li {
+	  display: inline;
+	  //flex: 1;
+
+	  a {
+		border: none;
+		margin-bottom: 0;
+		padding: 0.25rem 0.5rem;
+
+		span:first-of-type {
+		  display: none;
+		}
+
+		span:last-of-type {
+		  display: block;
+		}
+	  }
+	}
+  }
+}
+
+/*
+	** BLOCKS **
+*/
+
+// === Header ===
+.resume > .header, .resume > .header-page-2 {
+  border-bottom: none;
+
+  > .image {
+	> img {
+	  margin: 0 auto 1rem;
+	  width: 7rem;
+	  height: 7rem;
+	}
+  }
+
+  > .title {
+	text-align: center;
+
+	> h1, h3 {
+	  margin: 0;
+	}
+  }
+}
+
+@media print, (min-width: $breakpoint-mobile) {
+  .resume > .header, .resume > .header-page-2 {
+	> .image {
+	  float: left;
+	}
+
+	> .title {
+	  padding-left: 8rem;
+	  margin-top: 0.5rem;
+
+	  text-align: left;
+	}
+  }
+}
+
+// === Head contact block ===
+@media screen and (min-width: $breakpoint-mobile) {
+  .resume .contact-head {
+	margin-top: -5.5rem;
+	padding-bottom: 2rem;
+	padding-left: 8rem;
+
+	ul.contact li a{
+	  padding: 0.25rem 1.5rem 0.25rem 0;
+	}
+  }
+}
+
+// === Summary ===
+.resume > .summary {
+}
+
+// === Works ===
+.resume > .works {
+  > .work {
+	> h4, h5 {
+	  margin-top: 0;
+	}
+
+	> .time {
+	  float: right;
+	}
+  }
+}
+
+// === Skills ===
+.resume > .skills {
+  h3 {
+	margin-top: 0.25rem;
+  }
+
+  ul {
+	margin: 0;
+	margin-bottom: -0.25rem;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+
+	li {
+	  margin-right: 0.25rem;
+	  margin-bottom: 0.25rem;
+	  padding: 0.25rem 0.35rem;
+
+	  border-radius: 0.25rem;
+	  border: 1px #eee solid;
+
+	  display: inline;
+	}
+  }
+}
+
+// === References ===
+.resume > .references {
+  blockquote {
+	color: #515151;
+	padding-right: 0;
+
+	footer {
+	  color: #7a7a7a;
+	}
+  }
+}
+
+// === Educations ===
+.resume > .educations {
+  > .education {
+	> h4, h5 {
+	  margin-top: 0;
+	}
+
+	> .time {
+	  float: right;
+	}
+  }
+}
+
+@media print, (min-width: $breakpoint-mobile) {
+  .resume > .contact-foot {
+	ul.contact li {
+	  flex: 1;
+
+	  a {
+		span {
+		  display: inline;
+
+		}
+
+		span:first-of-type:after {
+		  content: ":";
+		}
+	  }
+	}
+  }
+}
+
+/*
+	** ORDERING **
+
+	Written in order that appears on the page
+*/
+
+.resume {
+  > .header {
+	order: 1;
+  }
+
+  > .contact-head {
+	order: 3;
+  }
+
+  > .summary {
+	order: 2;
+  }
+
+  > .works {
+	order: 4;
+  }
+
+  > .references {
+	order: 6;
+  }
+
+  > .skills {
+	order: 7;
+  }
+
+  > .educations {
+	order: 8;
+  }
+
+  > .contact-foot {
+	order: 9;
+  }
+}
+
+@media print, (min-width: $breakpoint-mobile) {
+  .resume {
+	> .contact-head {
+	  order: 2;
+	}
+
+	> .summary {
+	  order: 3;
+	}
+  }
+}

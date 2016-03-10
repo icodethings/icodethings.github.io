@@ -62,7 +62,7 @@
   }
 }
 
-@media (min-width: $breakpoint-mobile) {
+@media print, (min-width: $breakpoint-mobile) {
   .masthead{
 	padding-bottom: 1rem;
   }

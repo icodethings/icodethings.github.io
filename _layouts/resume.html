@@ -1,0 +1,51 @@
+---
+layout: default
+bodyclass: resume-page
+---
+
+<div class="print-warning">
+	Thanks for printing my resume! To view the latest version visit: http://icodethin.gs/resume/
+</div>
+
+<div class="print-button">
+	<a onclick="window.print();">
+		Print this page
+	</a>
+</div>
+
+<article class="page resume">
+	{{ content }}
+</article>
+
+<script>
+	(function() {
+		// Print tracking
+		var afterPrint = function() {
+			ga('send', 'event', 'Resume', 'print');
+		};
+
+		if (window.matchMedia) {
+			var mediaQueryList = window.matchMedia('print');
+			mediaQueryList.addListener(function(mql) {
+				if (!mql.matches) {
+					afterPrint();
+				}
+			});
+
+			if(!window.matchMedia('(min-width: 40em)').matches){
+				window.onload = function() {
+					var elTop = document.querySelector('article.page').offsetTop;
+					document.body.scrollTop = elTop - 16;
+				};
+			}
+		}
+
+		window.onafterprint = afterPrint;
+
+		// Firefox printer fixes
+		if(browser && browser == 'firefox'){
+			document.documentElement.setAttribute('moznomarginboxes', '');
+			document.documentElement.setAttribute('mozdisallowselectionprint', '');
+		}
+	}());
+</script>

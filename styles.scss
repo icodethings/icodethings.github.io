@@ -28,4 +28,10 @@
 @import "posts";
 @import "tagpage";
 @import "pagination";
+@import "resume";
 @import "message";
+
+@media print {
+  @import "print";
+  @import "resume_print";
+}

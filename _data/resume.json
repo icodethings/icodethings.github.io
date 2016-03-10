@@ -1,0 +1,127 @@
+{
+	"basics": {
+		"name": "Matthew Vandenbossche",
+		"label": "Software Engineer",
+		"picture": "https://avatars2.githubusercontent.com/u/3532069",
+		"email": "matt@icodethin.gs",
+		"phone": "+61 488 133 781",
+		"website": "http://icodethin.gs",
+		"summary": "I’m a self taught technology professional with over nine years of combined experience in software engineering and systems administration roles. Creator and contributor to multiple open source projects and advocate for open source ideology.",
+		"profiles": [
+			{
+				"network": "Twitter",
+				"username": "matt_v",
+				"url": "https://twitter.com/matt_v"
+			},
+			{
+				"network": "Github",
+				"username": "icodethings",
+				"url": "https://github.com/icodethings"
+			}
+		]
+	},
+	"work": [
+		{
+			"company": "ShopFrontPro",
+			"position": "Software and System Engineer",
+			"website": "http://shofrontpro.com",
+			"startDate": "2012-08-01",
+			"endDate": "2016-02-01",
+			"summary": "Started off as a PHP developer, but quickly transitioned into both a Software and Systems Engineer. I designed and managed the custom fully scalable SaaS hosting infrastructure built on top of AWS while growing the ShopFrontPro platform.",
+			"highlights": [
+				"Built and managed a custom fully scalable SaaS hosting infrastructure in AWS",
+				"Build and managed the AWS hosting infrastructure for Harvey Norman Group",
+				"Designed and build a live WYSIWYG website editor",
+				"Integrated with many 3rd party services",
+				"Optimised existing PHP codebase for scale and 5x performance boost"
+			]
+		},
+		{
+			"company": "Freelance Software Engineer",
+			"position": "",
+			"startDate": "2007-07-01",
+			"summary": "I work as a freelance web developer, developing and hosting sites for businesses and individuals, ranging from single static pages to complex apps with custom backends.",
+		},
+		{
+			"company": "Craft By Code",
+			"position": "Web Developer",
+			"startDate": "2010-02-01",
+			"endDate": "2011-02-01",
+			"summary": "Worked with a team of two other talented web developers and designers in a small web development startup. My work with this team has helped me learn valuable team work and communication skills.",
+		}
+	],
+	"skills": [
+		{
+			"name": "Software Engineer",
+			"level": "Master",
+			"keywords": [
+				"HTML",
+				"CSS",
+				"Print Stylesheets",
+				"Javascript",
+				"PHP",
+				"NodeJS",
+				"React",
+				"React Native",
+				"Express.js"
+			]
+		},
+		{
+			"name": "System Engineer",
+			"level": "Master",
+			"keywords": [
+				"AWS",
+				"Ubuntu Server",
+				"NGINX",
+				"PHP-FPM",
+				"MySQL",
+				"RethinDB"
+			]
+		}
+	],
+	"education": [
+		{
+			"institution": "RMIT",
+			"area": "Computing Systems",
+			"studyType": "Bachelor",
+			"startDate": "2012-01-01",
+			"endDate": "2012-01-01"
+		},
+		{
+			"institution": "Swinburne University of Technology",
+			"area": "Programing (Website Development)",
+			"studyType": "Certificate IV",
+			"startDate": "2011-01-01",
+			"endDate": "2011-01-01"
+		},
+		{
+			"institution": "Wesley Collage",
+			"area": "VCE",
+			"studyType": "Completion",
+			"startDate": "2005-01-01",
+			"endDate": "2010-01-01",
+			"courses": [
+				"Drama Honor Colours 2010",
+				"John Gibbs Award",
+				"Certificate II in Creative Industries",
+				"Certificate III in Media"
+			]
+		}
+	],
+	"languages": [
+		{
+			"language": "English",
+			"fluency": "Native speaker"
+		}
+	],
+	"references": [
+		{
+			"reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet dui eget tempor pretium. Sed nec mattis magna. Aliquam a porta ipsum, a finibus odio. Nam dictum, ligula sed aliquam malesuada, tortor augue imperdiet eros, id aliquam mi velit malesuada nisi. Nullam non tortor neque. In semper gravida elementum. Donec volutpat, leo quis placerat consequat, nunc ipsum malesuada enim, eu scelerisque justo turpis sit amet lorem. Morbi malesuada urna in turpis tempor dictum. Mauris accumsan placerat eros vel sagittis. Etiam faucibus lorem mi, nec ullamcorper massa faucibus in. Nunc in justo at dui tempor sagittis. Curabitur in justo et quam.",
+			"name": "Joey Flores, Co-founder and CEO of Earbits, Inc."
+		},
+		{
+			"reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pellentesque, arcu gravida sollicitudin sodales, turpis odio venenatis diam, sit amet commodo eros tellus eget velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam euismod euismod cursus. Nulla non augue accumsan, tincidunt sem at, venenatis augue. Phasellus erat lorem, eleifend a mauris aliquet, interdum blandit sapien. Aliquam quis sollicitudin quam, a venenatis diam. Cras pellentesque tellus tristique nisi hendrerit, eu efficitur eros facilisis.",
+			"name": "Yotam Rosenbaum, SVP of Operations, Earbits, Inc."
+		}
+	]
+}

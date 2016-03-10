@@ -81,7 +81,15 @@ blockquote {
     margin-bottom: 0;
   }
 
-  @media (min-width: $breakpoint-mobile) {
+  footer{
+	text-align: right;
+
+	&:after{
+	  content: '\00A0 \2014';
+	}
+  }
+
+  @media print, (min-width: $breakpoint-mobile) {
     padding-right: 5rem;
     padding-left: 1.25rem;
   }

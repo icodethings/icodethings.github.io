@@ -1,3 +1,4 @@
 $breakpoint-mobile: 40em;
 
-$font-stack: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$system-font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-stack: 'Source Sans Pro', $system-font-stack;

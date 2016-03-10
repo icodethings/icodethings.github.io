@@ -1,0 +1,19 @@
+/*
+	GLOBAL PRINT STYLESHEET
+*/
+
+body{
+  font-family: $system-font-stack;
+  font-size: 12pt;
+  width: 1000px;
+}
+
+img{
+//  -webkit-filter: grayscale(100%);
+//  filter: grayscale(100%);
+  image-resolution: from-image;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: black;
+}

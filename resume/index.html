@@ -1,0 +1,179 @@
+---
+layout: resume
+title: Resume
+---
+
+{% assign resume = site.data.resume %}
+
+{% capture contact %}
+<ul class="contact">
+	<li class="">
+		<a href="tel:{{ resume.basics.phone }}">
+			<span>Call Me</span>
+			<span>{{ resume.basics.phone }}</span>
+		</a>
+	</li>
+	<li class="">
+		<a href="mailto:{{ resume.basics.email }}">
+			<span>Email Me</span>
+			<span>{{ resume.basics.email }}</span>
+		</a>
+	</li>
+
+	<li class="print-only">
+		<a>
+			<span>Github</span>
+			<span>github.com/icodethings</span>
+		</a>
+	</li>
+
+	<li class="print-only">
+		<a>
+			<span>Twitter</span>
+			<span>@matt_v</span>
+		</a>
+	</li>
+
+	<li class="mobile-only print">
+		<a onclick="window.print();">
+			<span>Print this page</span>
+			<span></span>
+		</a>
+	</li>
+</ul>
+{% endcapture %}
+
+<div class="header section">
+	<div class="image">
+		<img src="{{ resume.basics.picture }}"/>
+	</div>
+
+	<div class="title">
+		<h1 class="name">{{ resume.basics.name }}</h1>
+
+		<h3 class="label">{{ resume.basics.label }} - Melbourne, Australia</h3>
+	</div>
+</div>
+
+<div class="contact-head section">
+	{{ contact }}
+</div>
+
+<div class="summary section">
+	<p>{{ resume.basics.summary }}</p>
+</div>
+
+<div class="works section">
+	<h2>Work Experience</h2>
+
+	{% for work in resume.work %}
+	<div class="work indent">
+		<h5 class="time">
+			{{ work.startDate | date: "%h %Y" }} -
+			{% if work.endDate %}
+			{{ work.endDate | date: "%h %Y" }}
+			{% else %}
+			Present
+			{% endif %}
+		</h5>
+
+		<h3>{{ work.company }}</h3>
+		{% if work.position %}
+		<h4>{{ work.position }}</h4>
+		{% endif %}
+
+		<p class="summary">{{ work.summary }}</p>
+
+		{% if work.highlights %}
+		<ul>
+			{% for highlight in work.highlights %}
+			<li>{{ highlight }}</li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+	</div>
+	{% endfor %}
+</div>
+
+<div class="skills section">
+	<h2>Skills</h2>
+
+	<div>
+	{% for skillGroup in resume.skills %}
+	<div class="skill-group indent">
+		<h3>{{ skillGroup.name }}
+			<small>({{ skillGroup.level }})</small>
+		</h3>
+		{% if skillGroup.keywords %}
+		<ul>
+			{% for skill in skillGroup.keywords %}
+			<li{%if skill == "Print Stylesheets" %} class="print-only"{% endif %}>{{ skill }}</li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+	</div>
+	{% endfor %}
+	</div>
+</div>
+
+<div class="header-page-2 section print-only">
+	<div class="image">
+		<img src="{{ resume.basics.picture }}"/>
+	</div>
+
+	<div class="title">
+		<h1 class="name">{{ resume.basics.name }}</h1>
+
+		<h3 class="label">{{ resume.basics.label }} - Melbourne, Australia</h3>
+
+		{{ contact }}
+	</div>
+</div>
+
+<div class="references section">
+	<h2>References</h2>
+
+	{% for reference in resume.references %}
+	<div class="reference">
+		<blockquote>
+			<p>{{ reference.reference }}</p>
+			<footer>{{ reference.name }}</footer>
+		</blockquote>
+	</div>
+	{% endfor %}
+</div>
+
+<div class="educations section">
+	<h2>Education</h2>
+
+	{% for education in resume.education %}
+	<div class="education indent">
+		<h5 class="time">
+			{{ education.startDate | date: "%h %Y" }}
+			{% if education.endDate == education.startDate %}
+			{% else if education.endDate %}
+			- {{ education.endDate | date: "%h %Y" }}
+			{% else %}
+			- Present
+			{% endif %}</h5>
+
+		<h3>{{ education.institution }}</h3>
+		<h4>{{ education.studyType }} of {{ education.area }}</h4>
+
+		{% if education.courses %}
+		<ul>
+			{% for course in education.courses %}
+			<li>{{ course }}</li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+	</div>
+	{% endfor %}
+</div>
+
+
+<div class="contact-foot section">
+	<h2>Get in Contact</h2>
+
+	{{ contact }}
+</div>

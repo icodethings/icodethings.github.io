@@ -14,7 +14,7 @@
   padding-bottom: 0;
 }
 
-@media (min-width: $breakpoint-mobile) {
+@media print, (min-width: $breakpoint-mobile) {
   .posts .post:last-of-type{
 	padding-bottom: 2em;
 	border-bottom: 1px solid #eee;
@@ -39,7 +39,7 @@
   text-align: justify;
 }
 
-@media (min-width: $breakpoint-mobile) {
+@media print, (min-width: $breakpoint-mobile) {
   .page,
   .post {
 	padding-left: 0;
