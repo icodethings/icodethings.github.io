@@ -22,8 +22,16 @@ paginate: 5
 permalink: pretty
 excerpt_separator: <!--more-->
 
+# SEO
+twitter:
+  username: matt_v
+author:
+  twitter: matt_v
+  picture: https://avatars2.githubusercontent.com/u/3532069
+
 gems:
   - jekyll-paginate
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-seo-tag
