@@ -29,7 +29,7 @@
 			"endDate": "2016-02-01",
 			"summary": "Started off as a PHP developer, but quickly transitioned into both a Software and Systems Engineer. I designed and managed the custom fully scalable SaaS hosting infrastructure built on top of AWS while growing the ShopFrontPro platform.",
 			"highlights": [
-				"Built and managed a custom fully scalable SaaS hosting infrastructure in AWS",
+				"Built and managed a fully scalable, custom SaaS hosting infrastructure in AWS",
 				"Built and managed the AWS hosting infrastructure for Harvey Norman Group",
 				"Designed and build a live WYSIWYG website editor",
 				"Integrated with many 3rd party services",
@@ -82,14 +82,14 @@
 	"education": [
 		{
 			"institution": "RMIT",
-			"area": "Computing Systems",
+			"area": "Computing Systems (Incomplete)",
 			"studyType": "Bachelor",
 			"startDate": "2012-01-01",
 			"endDate": "2012-01-01"
 		},
 		{
 			"institution": "Swinburne University of Technology",
-			"area": "Programing (Website Development)",
+			"area": "Programing (Website Development)  (Incomplete)",
 			"studyType": "Certificate IV",
 			"startDate": "2011-01-01",
 			"endDate": "2011-01-01"
