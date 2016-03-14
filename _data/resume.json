@@ -118,8 +118,12 @@
 	],
 	"references": [
 		{
-			"reference": "I'm really happy to write a recommendation for Matt - he's been an awesome teammate and developer and I believe he will make a positive impact wherever he ends up. Brandon came on board initially as a PHP developer but quickly moved into a dev ops role, moving ShopFrontPro forward with a SaaS hosting solution. He has helped with everything from developing new features, fixing bugs, and even doing email customer support. His dedication to the product has been real and very appreciated. I've personally benefited from Matt's attention to detail in researching new ways to write efficient CSS and his willingness to experiment with new technologies. Feel free to give me a call or email if you have any further questions. Consider this my glowing recommendation for Matt.",
+			"reference": "I'm really happy to write a recommendation for Matt - he's been an awesome teammate and developer and I believe he will make a positive impact wherever he ends up. Brandon came on board initially as a PHP developer but quickly moved into a dev ops role, moving ShopFrontPro forward with a SaaS hosting solution. He has helped with everything from developing new features, fixing bugs, and even doing email customer support. His dedication to the product has been real and very appreciated. I've personally benefited from Matt's attention to detail in researching new ways to write efficient code and his willingness to experiment with new technologies. Feel free to give me a call or email if you have any further questions. Consider this my glowing recommendation for Matt.",
 			"name": "Adrian Mullan, Owner of ShopFrontPro"
+		},
+		{
+			"reference": "Matt is an extremely talented engineer with a very broad range of skills and experience. From designing and maintaining a custom SaaS hosting environment, to designing and implementing countless 3rd party add ons and APIs, working with Matt has been fantastic. Matt is truly a full stack developer, and his work output is incredible. If there is any opportunity to work with Matt, I take it. He is the definition of an A player.",
+			"name": "Aleksei Trofimachine, Senior Developer of ShopFrontPro"
 		}
 	]
 }
